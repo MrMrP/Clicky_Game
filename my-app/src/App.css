@@ -3,3 +3,13 @@
   text-align: center;
   margin-bottom: 50px;
 }
+
+.master-container{
+  text-align: center;
+}
+
+.instructions {
+  font-size: large;
+  padding: 20px;
+  color: darkblue;
+}

@@ -41,18 +41,19 @@ class App extends Component {
       }
       return cardsArray;
   }
-
   // Map over this.state.friends and render a Card component for each friend object
   render() {
     return (
       <div className="master-container">
       <Navbar />
-      <Jumbotron /> 
-        <div>
+        <div className="Jumbotron">
+          <Jumbotron/>
+        </div>
+        <div className="instructions">
           <p>Click on an image to earn points, but don't click on any image more than once. If you do it's game over and your score will reset. Lets find out how high you can score!!!!!</p>
           <h6 className="score">Score: {this.state.score} | Top Score: {this.state.topScore}</h6> 
         </div>
-      <div className="container">
+      <div className="card-container">
       {this.state.cards.map(cards => (
           <Cards
             cardPress={this.cardPress}
